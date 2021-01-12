@@ -30,7 +30,7 @@ Background gradient:
 - Very dark grayish blue: hsl(237, 12%, 33%)
 - Dark grayish blue: hsl(240, 6%, 50%)
 
-#### Dividers
+#### Dividers (délimitations accordéon)
 
 - Light grayish blue: hsl(240, 5%, 91%)
 
