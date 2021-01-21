@@ -71,6 +71,7 @@ body {
 
 .title {
     margin-right: 3em;
+    color: hsl(237, 12%, 33%);
 }
 
 .arrow {
@@ -142,14 +143,15 @@ body {
     }
 
     .svg-women {
-        height: auto;
+        height: 500px;
         width: 50%;
         position: relative;
         overflow: hidden;
-        background: url(../images/bg-pattern-mobile.svg) no-repeat;
-        background-size: 800px;
-        background-position-x: -470px;
-        background-position-y: 230px;
+        background: url(../images/bg-pattern-desktop.svg) no-repeat;
+        background-size: 850px; /*width height*/
+        background-position-x: -520px;
+        background-position-y: -260px;
+        margin: 0;
     }
 
     .mobile {
@@ -162,11 +164,18 @@ body {
         transform: translate(-70px, 25%);
     }
 
+    .desktop2 {
+        display: block;
+        position: absolute;
+        left: -7.6em;
+        top: 38%
+    }
+
     .accordeon-container {
-        margin-left: 4em;
         margin-bottom: 0;
         display: flex;
         justify-content: center;
+        width: 300px;
     }
     
 
