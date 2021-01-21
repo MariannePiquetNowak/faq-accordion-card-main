@@ -74,6 +74,10 @@ body {
     color: hsl(237, 12%, 33%);
 }
 
+.title:hover {
+    color: hsl(14, 88%, 65%);
+}
+
 .arrow {
     width: 10px;
     height: 7px;
@@ -86,20 +90,11 @@ body {
     justify-content: space-between;
 }
 
-.accordeon-item:hover {
-    color: hsl(14, 88%, 65%);
-}
-
-
 .active {
     display: block;
     color: hsl(238, 29%, 16%);
     font-weight: 700;
     margin-top: 1em;
-}
-
-.active::after {
-    transform: rotate(180deg);
 }
 
 .accordeon-item-parr {
