@@ -13,6 +13,7 @@ body {
     color: hsl(237, 12%, 33%);
 
     position: relative;
+    box-sizing: border-box;
 }
 
 .attribution {
@@ -49,6 +50,7 @@ body {
     font-weight: 700;
     text-align: center;
     color: hsl(238, 29%, 16%);
+    margin-bottom: .7em;
 }
 
 .accordeon-container {
@@ -57,7 +59,7 @@ body {
     flex-direction: column;
     width: auto;
     height: auto;
-    margin: 2em;
+    margin: 0 2em 2em 2em;
 }
 
 .accordeon {
@@ -115,7 +117,7 @@ body {
     cursor: pointer
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 376x) {
     .accordeon-item-parr > p {
         width: 245px;
         font-size: 11px;
@@ -123,3 +125,53 @@ body {
     }
 }
 
+/* Responsive desktop */
+
+
+
+@media screen and (min-width: 376px) {
+    #container {
+        background-color: white;
+        border-radius: 20px;
+        margin: 12px;
+        width: 800px;
+        height: 450px;
+        position: relative;
+
+        display: flex;
+    }
+
+    .svg-women {
+        height: auto;
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+        background: url(../images/bg-pattern-mobile.svg) no-repeat;
+        background-size: 800px;
+        background-position-x: -470px;
+        background-position-y: 230px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop1 {
+        display: block;
+        width: 400px;
+        transform: translate(-70px, 25%);
+    }
+
+    .accordeon-container {
+        margin-left: 4em;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .faq-title {
+        text-align: start;
+    }
+   
+}
