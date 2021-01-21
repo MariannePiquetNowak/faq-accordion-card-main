@@ -26,6 +26,7 @@ body {
     border-radius: 20px;
     margin: 12px;
     position: relative;
+    height: auto;
 }
 
 .svg-women {
@@ -50,7 +51,7 @@ body {
     color: hsl(238, 29%, 16%);
 }
 
-.accordeon {
+.accordeon-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -59,15 +60,11 @@ body {
     margin: 2em;
 }
 
-.accordeon-item {
+.accordeon {
     border-bottom: 1px solid hsl(240, 5%, 91%);
     margin: 1em 0 2em 0;
     padding-bottom: 1em;   
     cursor: pointer;
-}
-
-.active {
-    font-weight: 700;
 }
 
 .title {
@@ -80,20 +77,40 @@ body {
 
 }
 
-.accordeon-item-element {
+.accordeon-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.ui-text-item {
-    display: none;
-}
 
 .active {
     display: block;
     color: hsl(240, 6%, 50%);
-    font-weight: 400;
+    font-weight: 700;
     margin-top: 1em;
+}
+
+
+.accordeon-item-parr {
+    display: none;
+}
+
+.accordeon-item-parr > p {
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+    padding-top: 1em
+}
+
+/* Trolling gag */
+.link {
+    color: hsl(240, 6%, 50%); 
+    cursor: pointer
+}
+
+@media screen and (min-width: 375px) {
+    .accordeon-item-parr > p {
+        width: 250px;
+    }
 }
 

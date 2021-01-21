@@ -1,16 +1,23 @@
 // Récupérer la class .accordeon-item
-let section = document.querySelector('.accordeon-item');
-// Récupérer la class .accordeon-item-element
-let sectionItem = document.querySelectorAll(".accordeon-item-element");
+let section = document.getElementsByClassName('accordeon');
+
+for(let i = 0; i < section.length; i++) {
+    section[i].addEventListener("click", () => {
+        // ajoute et retire la class active
+        section[i].classList.toggle("active");
+
+        let panel = section[i].children[1];
+
+        if (section[i].classList.contains("active")) {
+            panel.style.display = "block";
+        } else {
+            panel.style.display = "none";
+        }
 
 
-// Au click sur la class arrow, on ajoute la class .active à la variable section
-// Toggle ? 
 
-const clickArrow = () => {
-    console.log(sectionItem); // Renvoie ma collection de noeuds sectionItem
-    // Boucler sur cette collection
-    // on souhaite que si tel élément est ciblé, on lui ajoute .active
+        // Faire apparaitre l'enfant voulu => section[i].children
+        
+    })
+
 }
-
-section.addEventListener("click", clickArrow);
