@@ -83,14 +83,21 @@ body {
     justify-content: space-between;
 }
 
+.accordeon-item:hover {
+    color: hsl(14, 88%, 65%);
+}
+
 
 .active {
     display: block;
-    color: hsl(240, 6%, 50%);
+    color: hsl(238, 29%, 16%);
     font-weight: 700;
     margin-top: 1em;
 }
 
+.active::after {
+    transform: rotate(180deg);
+}
 
 .accordeon-item-parr {
     display: none;
@@ -110,7 +117,9 @@ body {
 
 @media screen and (min-width: 375px) {
     .accordeon-item-parr > p {
-        width: 250px;
+        width: 245px;
+        font-size: 11px;
+        line-height: 1.5em;
     }
 }
 
