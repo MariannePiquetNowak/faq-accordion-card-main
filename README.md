@@ -1,5 +1,7 @@
 # Frontend Mentor - FAQ Accordion Card
 
+## Déploiement de l'entrainement ==> https://faq-accordion-card-main-phi.vercel.app/
+
 ![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
